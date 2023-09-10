@@ -1,0 +1,150 @@
+15:47:56.193 [main]  INFO  com.intuit.karate - Karate version: 1.4.0
+15:47:57.455 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:57.811 [main]  DEBUG com.intuit.karate - response time in milliseconds: 353
+1 < 200
+1 < Date: Sun, 10 Sep 2023 20:47:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3642
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O5HMHFYtPk5ACYpC1L2aMh5GGW0xVQ2Xpa4Y94jX2GvQYz3DyBm0yADz7uHbCXdUogBm1LrBvvr3rNtsNYVo6yHREQk8X5k7coeJfyLVxGJmlz3qy8FMoktnWA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 804a877b4c300359-MIA
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:47:58.001 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 15, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:47:58.164 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 31, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:47:58.208 [main]  WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 74, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+15:47:58.208 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 74, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:47:58.288 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/users/get/user-get.feature
+15:47:58.359 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:47:58.383 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:47:58.387 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:27.261 [main]  INFO  com.intuit.karate - Karate version: 1.4.0
+15:56:27.619 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1694379387616
+15:56:27.642 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 2
+15:56:28.683 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+15:56:29.287 [main]  DEBUG com.intuit.karate - response time in milliseconds: 602
+1 < 201
+1 < Date: Sun, 10 Sep 2023 20:56:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 83
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"53-CyAOxH65dIlxz+6y91WQVyTJCK4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=R4zwALKHOrwi3Y34DRwOHS%2Fd2yQFOVkTpziZ4uZMniDGN04n2rhUVbAZHQet1evCmF5hcwcjNKYb53%2BMqGDW0qJDqVqXoZkb7UOaxFNTAeu32Ak6rDtrqQiSLw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 804a93f69ac40349-MIA
+{"name":"morpheus","job":"leader","id":"10","createdAt":"2023-09-10T20:56:30.678Z"}
+
+15:56:29.492 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 15, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:29.653 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 31, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:29.699 [main]  WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 74, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+15:56:29.699 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 74, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:29.781 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/users/post/user-post.feature
+15:56:29.843 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:29.861 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+15:56:29.865 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:32.438 [main]  INFO  com.intuit.karate - Karate version: 1.4.0
+16:02:32.757 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1694379752755
+16:02:33.745 [main]  DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:02:34.331 [main]  DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < Date: Sun, 10 Sep 2023 21:02:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-GuwEeBZeMSSDb5lO3Ye+sVmBhnE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UCt%2Fq50frKPOznIMJX4HTmXm00y%2BzqjVA0bb59zX8u%2F%2BTKaI0%2Fw3Eboqe2k%2F3v4aXT%2FG09Om%2F74CYQM9IY8IrpTc1XikfwHCry3mqlZ%2F9HcdznTj%2BfS7fh%2BKcg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 804a9ce00f0a6daf-MIA
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-09-10T21:02:35.726Z"}
+
+16:02:34.500 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 15, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:34.660 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 31, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:34.719 [main]  WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 74, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+16:02:34.719 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 74, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:34.840 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/users/put/user-put.feature
+16:02:34.907 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:34.927 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:02:34.933 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:57.000 [main]  INFO  com.intuit.karate - Karate version: 1.4.0
+16:03:57.305 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1694379837303
+16:03:58.354 [main]  DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:03:58.949 [main]  DEBUG com.intuit.karate - response time in milliseconds: 592
+1 < 200
+1 < Date: Sun, 10 Sep 2023 21:04:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-t+zD1MW1Ix0Wj4UesignMrmDl/U"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8ciI2u%2F4jHyPfp%2FgQnAhod76zQZ97tPZu6ii7vdfXNYFNUR%2BsfDrwhVH9x3S9lhc5aV14K%2FGqSbdy20Rq43%2Bli6JrBmQfb62uGkRtaUfYzikjZ9iTtV2Q7anmg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 804a9ef0fddedaf9-MIA
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-09-10T21:04:00.347Z"}
+
+16:03:59.120 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 15, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:59.276 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 31, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:59.321 [main]  WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 74, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+16:03:59.322 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 74, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:59.405 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/users/patch/user-patch.feature
+16:03:59.484 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:59.504 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+16:03:59.508 [main]  WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][main][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
