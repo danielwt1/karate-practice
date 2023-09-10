@@ -19,9 +19,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     // https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5
     testImplementation group: 'com.intuit.karate', name: 'karate-junit5', version: '1.4.0'
+    // libreria de cucumber necesaria para el reporte
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
 
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+// Para no tener que cambiar el classpath los feature y dejarlos en test/Java
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
 }

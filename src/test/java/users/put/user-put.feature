@@ -6,3 +6,5 @@ Feature: Put user on reqres
     When method put
 
     Then status 200
+    ## puedo inlcuir otro assert
+    And match $.name == "morpheus"

@@ -11,3 +11,15 @@ Feature: Get user on reqres
 
     ##Lo esperado le digo que estoy esperando al hacer el when
     Then status 200
+
+  Scenario: Get Users
+    #Creo variable para traer el archivo json y luego compararlo
+    * def jsonUsers = read("../json/users.json")
+
+    Given url "https://reqres.in/api/users?page=1"
+    When method get
+    Then status 200
+    #Mejorar validaciones si viene paginada la api
+    # se recomienda usar match yua que es mas inteligente
+    # mapoeo el json con $.nombre Key pero si dejo todo el $ toda todo el JSON
+    And match $ == jsonUsers
